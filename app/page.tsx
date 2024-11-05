@@ -1,8 +1,8 @@
 const Home = () => {
   return (
-  <div>
-    <p>Hello World!!</p>
+    <div className="flex w-screen items-center justify-center">
+      <p className="text-red-400">Hello World!! </p>
     </div>
   );
-}
+};
 export default Home;
