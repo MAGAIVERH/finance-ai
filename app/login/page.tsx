@@ -8,7 +8,7 @@ import { redirect } from "next/navigation";
 const LoginPage = async () => {
   const { userId } = await auth();
   if (userId) {
-    redirect("/");
+    return redirect("/");
   }
   return (
     <div className="grid h-full grid-cols-2">
@@ -23,7 +23,7 @@ const LoginPage = async () => {
         />
         <h1 className="mb-3 text-4xl font-bold">Bem-vindo!</h1>
         <p className="mb-8 text-muted-foreground">
-          A Finance AI é uma plataforma de gestão financeira ue utiliza AI para
+          A Finance AI é uma plataforma de gestão financeira que utiliza AI para
           monitorar suas movimentações, e oferecer insights personalizados,
           facilitando o controle do seu orçamento.
         </p>
