@@ -1,10 +1,8 @@
 import * as React from "react";
 import { cn } from "@/app/_lib/utils";
 
-// Define um alias para o tipo das props do componente Input.
-type InputProps = React.ComponentProps<"input">; // <--- Adicionei essa linha
+type InputProps = React.ComponentProps<"input">;
 
-// O componente Input utiliza o tipo InputProps.
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, ...props }, ref) => {
     return (
@@ -22,8 +20,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 );
 Input.displayName = "Input";
 
-// Exporta o componente Input.
 export { Input };
 
-// Exporta o tipo InputProps usando `export type`.
-export type { InputProps }; // <--- Corrigi essa linha
+export type { InputProps };
