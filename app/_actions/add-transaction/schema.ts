@@ -15,5 +15,6 @@ export const upsertTransactionSchema = z.object({
   category: z.nativeEnum(TransactionCategory),
 
   paymentMethod: z.nativeEnum(TransactionPaymentMethod),
+
   date: z.date(),
 });
